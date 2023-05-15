@@ -1,13 +1,13 @@
 import React from 'react';
 //import { logo } from "../assets";
-import logo from "../../src/assets/oppsum-logo.png";
+import logo from "../../src/assets/oppsumm-logo-full-nobg.png";
 
 const Hero = () => {
   return (
     <header className='w-full flex flex-col justify-center items-center'>
         <nav className='flex justify-between items-center w-full mb-10 pt-3'>
             <img src={logo} alt="oppsumm logo"
-            className='w-5 object-contain'
+            className='w-36 object-contain'
             />
 
             <button type="button"
@@ -24,11 +24,7 @@ const Hero = () => {
             Summarise Articles Quickly Using The Power Of <br className='min-md:hidden'/> <span className='orange_gradient'>OpenAI GPT-4</span>
         </h1>
         <h2 className='desc'>
-            No more &ldquo;TL;DR&rdquo; - Get the low-down of any article effortlessly! <br /> <br />
-            <span className='font-bold'>OppSumm</span> is an open-source summariser tool that simplifies your reading by quickly converting long articles into concise, &ldquo;no-fluff&rdquo; summaries. <br />
-              
-
-
+            No more &ldquo;TL;DR&rdquo; - Get the low-down on any article quickly and effortlessly with <span className='font-bold'>OppSumm</span>, the open-source tool that simplifies your reading by converting long articles into concise, &ldquo;no-fluff&rdquo; summaries. <br />
         </h2>
         
     </header>
