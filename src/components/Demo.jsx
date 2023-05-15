@@ -110,9 +110,9 @@ const Demo = () => {
           </button>          
         </form>
 
-        {/*Article URL History for easy access for the user */}
+        {/*Article URL History for easy access for the user - I will use a slice of the history array so that it only displays 5 buttons */}
         <div className='flex flex-col gap-1 max-h-60 overflow-y-auto mt-8'>
-          {articleHistory.map((item, index) => (
+          {articleHistory.slice(0, 5).map((item, index) => (
             <div
               key={`link-${index}`}
               onClick={() => setArticle(item)}
