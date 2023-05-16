@@ -142,11 +142,7 @@ const Demo = () => {
       {/*Search Results Displayed */}
       <div className='my-10 max-w-full flex justify-center items-center'>
         {isFetching ? (
-          <>
-          <img src={loader} alt="loader" className='w-20 h-20'/>
-          <p className='mt-2 text-center text-sm font-semibold'>Summarising... Please sit tight...</p>
-          </>
-          
+          <img src={loader} alt="loader" className='w-20 h-20'/>          
         ) : error ? (
           <p className='font-inter font-bold text-black text-center'>
             Hmmm... That wasn't supposed to happen... <br />
