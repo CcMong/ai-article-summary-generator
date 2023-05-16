@@ -80,6 +80,9 @@ const Demo = () => {
 
   return (
     <section className='mt-16 w-full max-w-xl '>
+      <h3 className='text-center text-sm font-semibold mb-6'>
+        Enter a URL for a page or article you want to summarise, and let OppSumm do the rest
+      </h3>
       {/*Search Bar */}
       <div className='flex flex-col w-full gap-2'>
         <form 
@@ -139,7 +142,11 @@ const Demo = () => {
       {/*Search Results Displayed */}
       <div className='my-10 max-w-full flex justify-center items-center'>
         {isFetching ? (
+          <>
           <img src={loader} alt="loader" className='w-20 h-20'/>
+          <p className='mt-2 text-center text-sm font-semibold'>Summarising... Please sit tight...</p>
+          </>
+          
         ) : error ? (
           <p className='font-inter font-bold text-black text-center'>
             Hmmm... That wasn't supposed to happen... <br />
